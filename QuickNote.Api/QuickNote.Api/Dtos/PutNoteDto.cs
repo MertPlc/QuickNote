@@ -1,0 +1,16 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace QuickNote.Api.Dtos
+{
+    public class PutNoteDto
+    {
+        public int Id { get; set; }
+
+        [Required, MaxLength(100)]
+        public string Title { get; set; }
+
+        public string Content { get; set; }
+
+        public int NoteBookId { get; set; }
+    }
+}
