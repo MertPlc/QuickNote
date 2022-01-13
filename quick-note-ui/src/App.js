@@ -9,9 +9,9 @@ function App() {
 
   return (
     <AppContext.Provider value={noteBook, setNoteBook}>
-    <div className="App">
-      {noteBook ? <NoteBook /> : <Enterance />}
-    </div>
+      <div className="App">
+        {noteBook ? <NoteBook /> : <Enterance />}
+      </div>
     </AppContext.Provider>
   );
 }
